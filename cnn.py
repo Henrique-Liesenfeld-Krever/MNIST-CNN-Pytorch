@@ -15,7 +15,10 @@ class CNN(torch.nn.Module):
             torch.nn.MaxPool2d(kernel_size=2),
             
             torch.nn.Flatten(),
-            torch.nn.Linear(32*5*5,10),
-            torch.nn.ReLU()
+            torch.nn.Linear(32*5*5,400),
+            torch.nn.ReLU(),
+            torch.nn.Linear(400,64),
+            torch.nn.ReLU(),
+            torch.nn.Linear(64,10),
         )
         
