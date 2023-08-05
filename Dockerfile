@@ -5,6 +5,7 @@ RUN apt install python3 -y
 RUN apt install python3-pip -y
 RUN pip3 install torch torchvision torchaudio
 RUN pip3 install torchvision
+RUN pip3 install matplotlib
 
 WORKDIR /usr/app/src
 
