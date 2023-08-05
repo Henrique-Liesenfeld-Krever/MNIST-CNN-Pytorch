@@ -1,0 +1,8 @@
+#builda o docker
+$ docker build -t cnn .
+
+#remove o docker
+$ docker image rm -f "image number"
+
+#executa o docker
+$ docker run --gpus all -it cnn
