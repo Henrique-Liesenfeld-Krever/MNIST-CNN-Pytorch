@@ -19,6 +19,6 @@ class CNN(torch.nn.Module):
             torch.nn.ReLU(),
             torch.nn.Linear(400,64),
             torch.nn.ReLU(),
-            torch.nn.Linear(64,10),
+            torch.nn.Linear(64,10)
         )
         
